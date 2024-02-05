@@ -1,0 +1,73 @@
+{
+  "expo": {
+    "name": "BaseNet",
+    "slug": "BaseNet",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow The Base Net to access your camera?"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow The Base Net to access your photos"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "kotlinVersion": "1.7.22"
+          }
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "userInterfaceStyle": "automatic",
+      "bundleIdentifier": "com.thebasenet.basenet",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.thebasenet.basenet",
+      "versionCode": 1,
+      "userInterfaceStyle": "automatic",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9339736d-45cd-4189-972f-b1b80f57d176"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/9339736d-45cd-4189-972f-b1b80f57d176"
+    }
+  }
+}
